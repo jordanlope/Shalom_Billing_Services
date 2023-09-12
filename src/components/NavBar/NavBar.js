@@ -37,11 +37,6 @@ export default function NavBar() {
                 Services
               </Link>
             </Nav.Link>
-            <Nav.Link href="#Costs">
-              <Link to="Costs-section" spy={true} smooth={true} duration={800}>
-                Costs
-              </Link>
-            </Nav.Link>
             <Nav.Link href="#Hours">
               <Link to="Hours-section" spy={true} smooth={true} duration={800}>
                 Hours

@@ -1,25 +1,61 @@
 import React from "react";
+import ListGroup from "react-bootstrap/ListGroup";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
+import {
+  faFileInvoice,
+  faCode,
+  faHandshake,
+  faSuitcaseMedical,
+  faNewspaper,
+  faHand,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ServicesSection() {
   return (
     <section className="Services-section">
       <h2>Our Services</h2>
-      <ul>
-        <li>Billing for all medical plans</li>
-        <li>CPT and ICD10 code coding</li>
-        <li>Payment reconciliation and appeals (if necessary)</li>
-        <li>Auditing of pending payment claims</li>
-        <li>Handling of claim denials and supplemental plans</li>
-        <li>Direct interactions with medical plans</li>
-      </ul>
-      <p>
-        The company is equipped to efficiently process a significant volume of
-        invoices within a reasonable timeframe, minimizing errors in the billing
-        process. They maintain excellent communication with insurers' management
-        for effective rejection resolution. Additionally, Shalom Billing
-        Services, LLC conducts weekly visits to insurers to submit
-        reconciliation documents.
-      </p>
+      <Container>
+        <Row>
+          <Col>
+            <ListGroup variant="flush">
+              <ListGroup.Item>
+                <FontAwesomeIcon icon={faFileInvoice} />
+                <br />
+                Billing for all medical plans
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <FontAwesomeIcon icon={faCode} />
+                <br />
+                CPT and ICD10 code coding
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <FontAwesomeIcon icon={faHandshake} />
+                <br />
+                Payment reconciliation and appeals (if necessary)
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <FontAwesomeIcon icon={faSuitcaseMedical} />
+                <br />
+                Auditing of pending payment claims
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <FontAwesomeIcon icon={faHand} />
+                <br />
+                Handling of claim denials and supplemental plans
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <FontAwesomeIcon icon={faNewspaper} />
+                <br />
+                Direct interactions with medical plans
+              </ListGroup.Item>
+            </ListGroup>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }

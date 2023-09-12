@@ -8,6 +8,7 @@ import CostsSection from "./components/CostsSection/CostsSection";
 import HoursSection from "./components/HoursSection/HoursSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import Footer from "./components/Footer/Footer";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ServicesSection />
       <CostsSection />
       <HoursSection />
+      <hr />
       <ContactSection />
       <Footer />
     </div>
