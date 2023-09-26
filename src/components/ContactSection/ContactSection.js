@@ -7,7 +7,7 @@ export default function ContactSection() {
       <h2>Set Up A Consultation</h2>
       <div>
         <InlineWidget
-          url="https://calendly.com/jordanlopez992"
+          url="https://calendly.com/shalombillingservices"
           styles={{ minWidth: 320, height: 700 }}
         />
       </div>
