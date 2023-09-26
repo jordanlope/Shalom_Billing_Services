@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone, faMap } from "@fortawesome/free-solid-svg-icons";
 
 export default function SocialContact() {
   return (
@@ -32,6 +32,15 @@ export default function SocialContact() {
         >
           {" "}
           <FontAwesomeIcon icon={faPhone} />
+        </a>
+        <a
+          rel="noreferrer"
+          href="https://maps.app.goo.gl/nP9WH5ij1AWqY1HT7"
+          target="_blank"
+          style={{ color: "black", paddingLeft: "10px", paddingRight: "10px" }}
+        >
+          {" "}
+          <FontAwesomeIcon icon={faMap} />
         </a>
       </section>
     </div>
